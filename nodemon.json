@@ -2,5 +2,5 @@
   "watch": ["src"],
   "ext": "js,json",
   "ignore": ["node_modules"],
-  "exec": "npm run lint:fix && npm run format && node src/index.js"
+  "exec": "node src/index.js"
 }
