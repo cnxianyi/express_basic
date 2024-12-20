@@ -1,17 +1,30 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
-    "noEmit": true,
-    "target": "es6",
-    "module": "commonjs",
-    "baseUrl": ".", // 确保 baseUrl 在 compilerOptions 内
-    "paths": {
-      "@/*": ["src/*"],
-      "@router/*": ["src/router/*"]
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "noEmit": true,
+        "target": "es6",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@router/*": [
+                "src/router/*"
+            ]
+        },
+        "types": [
+            "node",
+            "express"
+        ]
     },
-    "types": ["node" , "jest" , "express"] // 包含 Node.js 类型定义
-  },
-  "include": ["src/**/*.js"],
-  "exclude": ["node_modules"]
+    "include": [
+        "src/**/*.js",
+        "types/**/*",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

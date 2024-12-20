@@ -10,3 +10,24 @@ lerna-debug.log*
 node_modules
 .DS_Store
 *.local
+
+upload
+
+* copy.js
+* copy.json
+* copy *.js
+* copy *.json
+
+test.js
+test.json
+* test.js
+* test.json
+* test *.js
+* test *.json
+
+* test *.md
+
+.env.production
+
+pm2log
+
